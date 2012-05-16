@@ -28,7 +28,7 @@ import com.sun.jersey.client.apache.config.DefaultApacheHttpClientConfig;
 
 /**
  * 
- * @author juan.mendez
+ * @author juanmendez@gkudos.com
  * 
  */
 public final class JasperserverRestClient {

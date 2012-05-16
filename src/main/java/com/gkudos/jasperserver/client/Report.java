@@ -12,7 +12,7 @@ import org.apache.commons.lang.builder.ToStringStyle;
 /**
  * Value Object
  * 
- * @author juan.mendez
+ * @author juanmendez@gkudos.com
  * 
  */
 public class Report implements Serializable {
