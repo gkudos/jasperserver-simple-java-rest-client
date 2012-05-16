@@ -84,41 +84,13 @@ public final class JasperserverRestClient {
 	public File getReportAsFile(Report reporte) throws Exception {
 		LOGGER.debug("getReportAsFile");
 
-		/*
-		 * PrintStream out = null; try { out = new PrintStream( new
-		 * FileOutputStream("E:\\snc\\temp\\mylog.txt")); } catch
-		 * (FileNotFoundException e) { LOGGER.error( e.getMessage(), e); }
-		 */
-
 		// "automagically" manages cookies
 		ApacheHttpClient client = ApacheHttpClient.create(clientConfig);
 		// Client client = Client.create(clientConfig);
 		// debug http traffic
 		// client.addFilter(new LoggingFilter(out));
 		client.addFilter(new HTTPBasicAuthFilter(user, pwd));
-		/*
-		 * client.addFilter(new ClientFilter() { private List<Object> cookies;
-		 * 
-		 * @Override public ClientResponse handle(ClientRequest request) throws
-		 * ClientHandlerException {
-		 * LOGGER.debug("****************************************"); if (cookies
-		 * != null) { request.getHeaders().put("Cookie", cookies);
-		 * LOGGER.debug("Adicionando cookies al siguiente request:"+cookies); }
-		 * 
-		 * ClientResponse response = getNext().handle(request);
-		 * LOGGER.debug("Headers:"+response.getHeaders());
-		 * 
-		 * List<NewCookie> responseCookies = response.getCookies() ; if
-		 * (responseCookies!= null && responseCookies.size()>0) { if (cookies ==
-		 * null) { LOGGER.debug("Inicializa lista de cookies..."); cookies = new
-		 * ArrayList<Object>(); } // simple addAll just for illustration (should
-		 * probably // check for duplicates and expired cookies)
-		 * cookies.addAll(response.getCookies());
-		 * LOGGER.debug("Cookies originales:"+response.getCookies()); }
-		 * LOGGER.debug("****************************************"); return
-		 * response; } });
-		 */
-
+		
 		String describeResourcePath = "/resource" + reporte.getUrl();
 		String generateReportPath = "/report" + reporte.getUrl() + "?RUN_OUTPUT_FORMAT=" + reporte.getFormat();
 		// LOGGER.debug("describeResourcePath:" + describeResourcePath);

@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 /**
  * 
- * @author juan.mendez
+ * @author juanmendez@gkudos.com
  * 
  */
 
