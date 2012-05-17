@@ -3,8 +3,10 @@ jasperserver-simple-java-rest-client
 
 # Overview
 
-A Simple Java Client for Jasperserver 4.5 (and Above) that uses the Web Service API based on the REST framework (http://jasperforge.org/plugins/mwiki/index.php/Jasperserver/REST_Web_Services_API).
-Executes a report in a remote server and retrieves the generated file (ie: pdf)
+A Simple Java Client for Jasperserver 4.5 (and Above) that uses the [jasper](http://jasperforge.org/plugins/mwiki/index.php/Jasperserver/REST_Web_Services_API "Web Service API based on the REST framework")  
+
+Executes a report in a remote server and retrieves the generated file (ie: pdf) to a local folder.
+
 This library is created by [gkudos](http://gkudos.com/ "Kudos Ltda.")
 
 # Sample Usage
