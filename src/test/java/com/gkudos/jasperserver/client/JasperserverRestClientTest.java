@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 public class JasperserverRestClientTest {
 	public static final Logger LOGGER = LoggerFactory.getLogger(JasperserverRestClientTest.class);
 	
-	private final static String serverUrl = "http://172.28.9.242/jasperserver/";
+	private final static String serverUrl = "http://myserver/jasperserver/";
 	private final static String serverUser = "joeuser";
 	private final static String serverPassword = "joeuser";
 	
