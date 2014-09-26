@@ -1,6 +1,11 @@
 jasperserver-simple-java-rest-client
 ====================================
 
+# Notes
+
+This is an outdated approach to use jasperserver's REST capabilities.  
+You can find the official Jasperserver Rest project here https://github.com/Jaspersoft/jrs-rest-java-client
+
 # Overview
 
 A Simple Java Client for Jasperserver 4.5 (and Above) that uses the [Web Service API based on the REST framework](http://jasperforge.org/plugins/mwiki/index.php/Jasperserver/REST_Web_Services_API "Web Service API based on the REST framework")  
