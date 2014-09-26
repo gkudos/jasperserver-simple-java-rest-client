@@ -4,7 +4,7 @@ jasperserver-simple-java-rest-client
 # Notes
 
 This is an outdated approach to use jasperserver's REST capabilities.  
-You can find the official Jasperserver Rest project here https://github.com/Jaspersoft/jrs-rest-java-client
+You can find the official Jasperserver Rest project here : https://github.com/Jaspersoft/jrs-rest-java-client
 
 # Overview
 
